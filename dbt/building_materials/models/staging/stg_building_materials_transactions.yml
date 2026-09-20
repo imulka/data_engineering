@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg_building_materials_transactions
+    description: "Cleaned and standardized building materials transaction data."
+
+    columns:
+      - name: transaction_date
+        description: "Date of the transaction."
+        data_tests:
+          - not_null
+
+      - name: sku
+        description: "Product SKU."
+        data_tests:
+          - not_null
+
+      - name: product_category
+        description: "Building material product category."
+        data_tests:
+          - not_null
+
+      - name: units
+        description: "Number of units sold."
+        data_tests:
+          - not_null
+
+      - name: unit_price
+        description: "Price per unit."
+        data_tests:
+          - not_null
+
+      - name: revenue
+        description: "Transaction revenue."
+        data_tests:
+          - not_null
