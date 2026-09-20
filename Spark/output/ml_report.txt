@@ -1,0 +1,40 @@
+NETFLIX CHURN ML REPORT
+=======================
+
+MODEL USED
+Logistic Regression
+
+TRAIN / TEST
+Training rows: 4037
+Testing rows: 953
+
+MODEL RESULTS
+AUC:       0.9708
+Accuracy:  0.9035
+Precision: 0.9036
+Recall:    0.9035
+
+SAMPLE PREDICTIONS
+------------------
+customer_id=0017c041-a14b-4780-9d9a-7a99558a0768, subscription=Basic, last_login_days=7, avg_watch_time_per_day=1.5, actual=0, prediction=0.0, probability=[0.9999042151872607,9.578481273930795e-05]
+customer_id=00477256-578d-4abd-8ed8-3a5e75539e7a, subscription=Premium, last_login_days=35, avg_watch_time_per_day=0.04, actual=1, prediction=1.0, probability=[0.00018564017983060683,0.9998143598201694]
+customer_id=00499449-d818-4965-b170-d6a300fca0fd, subscription=Premium, last_login_days=31, avg_watch_time_per_day=0.45, actual=0, prediction=0.0, probability=[0.9689664523666721,0.031033547633327885]
+customer_id=00aa6c2a-b291-411e-b240-202fea9bf417, subscription=Premium, last_login_days=37, avg_watch_time_per_day=0.47, actual=0, prediction=0.0, probability=[0.9657347481349888,0.03426525186501117]
+customer_id=00cf1667-2876-4dc9-978d-c5ab0abbde82, subscription=Standard, last_login_days=53, avg_watch_time_per_day=0.37, actual=0, prediction=0.0, probability=[0.9494467641646089,0.050553235835391064]
+customer_id=012128df-8b33-420d-89d1-4716b755bda8, subscription=Basic, last_login_days=36, avg_watch_time_per_day=0.15, actual=1, prediction=1.0, probability=[0.0003002601588561249,0.9996997398411439]
+customer_id=018fad5a-7be7-48ad-993f-68fe75ed0b9b, subscription=Standard, last_login_days=29, avg_watch_time_per_day=0.07, actual=1, prediction=1.0, probability=[0.12929553977438116,0.8707044602256189]
+customer_id=01bf79df-d2f3-4bf8-b63c-1e8031b22ac3, subscription=Premium, last_login_days=17, avg_watch_time_per_day=0.43, actual=0, prediction=0.0, probability=[0.8218604292223021,0.17813957077769793]
+customer_id=023b26d4-c93d-4dc3-8397-5f01fd650e10, subscription=Standard, last_login_days=4, avg_watch_time_per_day=0.27, actual=0, prediction=0.0, probability=[0.7129297985183575,0.28707020148164253]
+customer_id=02421d84-5f78-429d-a2f6-be81c656dc0a, subscription=Basic, last_login_days=53, avg_watch_time_per_day=0.31, actual=1, prediction=1.0, probability=[0.0021273153686073723,0.9978726846313927]
+customer_id=0244ba1e-f643-4f1a-9ed1-2531650a2ace, subscription=Standard, last_login_days=55, avg_watch_time_per_day=0.15, actual=1, prediction=1.0, probability=[0.03525551803920978,0.9647444819607902]
+customer_id=025f67d8-5ff0-4e79-9463-ec829fec6755, subscription=Basic, last_login_days=3, avg_watch_time_per_day=0.31, actual=1, prediction=0.0, probability=[0.6596364662184474,0.3403635337815526]
+customer_id=027c06c0-4dec-43d4-91eb-d2a5a70f92e0, subscription=Premium, last_login_days=35, avg_watch_time_per_day=0.01, actual=1, prediction=1.0, probability=[0.004134767230109571,0.9958652327698905]
+customer_id=02ca32eb-bc08-4a92-8c39-ea2fe7612be9, subscription=Premium, last_login_days=8, avg_watch_time_per_day=0.3, actual=1, prediction=1.0, probability=[0.11473648587068128,0.8852635141293187]
+customer_id=032e9a3c-7d07-42e6-8dc5-6c7da4996529, subscription=Basic, last_login_days=36, avg_watch_time_per_day=0.14, actual=1, prediction=1.0, probability=[0.0007969368522319175,0.9992030631477681]
+
+CONFUSION MATRIX
+----------------
+actual=0, prediction=0.0, count=407
+actual=0, prediction=1.0, count=52
+actual=1, prediction=0.0, count=40
+actual=1, prediction=1.0, count=454

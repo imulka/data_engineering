@@ -1,0 +1,88 @@
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+**/.venv/
+**/venv/
+
+# ==========================================
+# Credentials / secrets
+# ==========================================
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*password*
+*credentials*
+*secret*
+
+# ==========================================
+# IDE / Linux / OS
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# ==========================================
+# Airflow runtime files
+# ==========================================
+airflow.db
+airflow.cfg
+standalone_admin_password.txt
+logs/
+**/logs/
+*.pid
+
+# Generated SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# Kafka local installation
+# Do not upload Kafka itself to GitHub
+# ==========================================
+kafka/kafka_2.13-4.3.1/
+kafka/kafka_2.13-4.3.1.tgz
+
+# Kafka runtime data/logs
+kafka-logs/
+kraft-combined-logs/
+meta.properties
+
+# ==========================================
+# Java
+# ==========================================
+*.class
+*.jar
+
+# ==========================================
+# Spark generated/runtime files
+# ==========================================
+.sparkStaging/
+metastore_db/
+derby.log
+
+# ==========================================
+# Temporary files
+# ==========================================
+*.tmp
+*.temp
+.cache/
+
+# Spark generated Parquet output
+Spark/output/netflix_churn_clean/
+*.crc
+_SUCCESS
