@@ -1,0 +1,34 @@
+Terminal 1 — start Airflow
+
+cd ~/etlworks/Airflow/project1
+source .venv/bin/activate
+export AIRFLOW_HOME=$(pwd)/airflow_home
+export AIRFLOW__API__PORT=8082
+
+airflow standalone
+
+
+Terminal 2 — work with the DAG
+
+cd ~/etlworks/Airflow/project1
+source .venv/bin/activate
+export AIRFLOW_HOME=$(pwd)/airflow_home
+
+
+airflow dags list | grep food_delivery
+
+airflow dags test food_delivery_etl 2026-09-18
+
+
+Local Airflow server
+
+http://localhost:8082
+
+Login:
+
+username: admin
+password: yfQCZ8rBbcQkbHKQ
+
+Your DAG file remains here:
+
+~/etlworks/Airflow/project1/airflow_home/dags/food_etl.py
