@@ -1,0 +1,20 @@
+# Python virtual environment
+.venv/
+
+# Raw / generated data
+data/
+warehouse/
+spark-warehouse/
+
+# Downloaded source archives
+*.zip
+*.torrent
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Spark / local temp files
+.metals/
+.idea/
+.DS_Store
