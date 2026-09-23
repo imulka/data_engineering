@@ -1,0 +1,5 @@
+.venv/
+indexData.csv
+output_weekly/
+__pycache__/
+*.pyc
